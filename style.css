@@ -1,0 +1,142 @@
+body{
+background-color:rgb(36, 26, 46);
+margin: 0 ;
+
+
+}
+
+
+#countdown {
+    color: white;
+    height: 70px;
+    width: 400px;
+    margin:0;
+    align-items: center;
+    font-size: xx-large;
+    justify-content: right;
+
+}
+
+#countdown1 {
+    color: white;
+    height: 70px;
+    width: 200px;
+    margin:0;
+    align-items: center;
+    font-size: xx-large;
+    justify-content: center;
+    
+}
+
+#game_container {
+    position: relative;
+    display: flex ;
+    justify-content: center;
+
+}
+
+#game_stage{
+    position: absolute;
+    background-image: url("./asset/purple.png");
+    animation: scroll-background 2s linear infinite;
+    border: solid 2px greenyellow;
+    width: 1200px;
+    height: 800px;
+}
+
+
+@keyframes scroll-background {
+    from {
+        background-position-x: 0px;
+    }
+    to {
+        background-position-y: 1000px;
+    }
+}
+
+ #hero{
+    position: absolute;
+    background-image: url("./asset/playerShip3_blue.png");
+    height: 78px;
+    width: 96px;
+    top: 700px;
+    left: 600px;
+} 
+
+#enemy {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+}
+
+.enemies{
+background-image: url("./asset/meteorGrey_med2.png");
+height: 40px;
+width: 45px;
+position: absolute;
+}
+
+
+#missiles {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+}
+
+.missile1 {
+    background:url("./asset/fire09.png");
+    width:16px;
+    height: 40px;
+    position: absolute;
+}
+
+#score{
+    color: white;
+    font-size: xx-large;
+}
+
+.gameovernow{
+    background-color: red;
+    height: 800px;
+    width: 1200px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#livescore{
+    color: white;
+    font-size: xx-large;
+}
+
+#enemydestory {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+
+}
+
+
+.herodie {
+    background: url("./asset/platformPack_tile011.png");
+    width: 64px;
+    height: 64px;
+    position: absolute;
+
+}
+
+.damage{
+background: url("./asset/platformPack_tile012.png");
+   width: 64px;
+   height: 64px;
+    position: absolute;
+}
+
+#herodestory {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+}
+
+
+
