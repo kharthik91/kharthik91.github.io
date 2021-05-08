@@ -207,7 +207,7 @@ function GameOver1() { //game function for life over
 
 setTimeout(() => { //game time limit to end
   GameOver();
-}, 1222000);
+}, 120400);
 
 const startingMinutes = 2; 
 let time = startingMinutes * 60;
@@ -225,9 +225,6 @@ function countdown() {
   }
 }
 
-function zoom() {
-  document.body.style.zoom = "90%" 
-}
 
 
 
@@ -242,7 +239,6 @@ function render() {
   heroCollision();
   rockDestoryerDisapper();
   GameOverText();
-  zoom() 
 }
 
 render();
