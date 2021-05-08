@@ -225,6 +225,12 @@ function countdown() {
   }
 }
 
+function zoom() {
+  document.body.style.zoom = "90%" 
+}
+
+
+
 function render() {
   setTimeout(render, 2);
   GameOverlife()
@@ -236,6 +242,7 @@ function render() {
   heroCollision();
   rockDestoryerDisapper();
   GameOverText();
+  zoom() 
 }
 
 render();
