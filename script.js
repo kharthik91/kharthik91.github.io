@@ -102,7 +102,7 @@ function spawnEnemies() {
 
 function moveEnemeies() { //move enemy speed
   for (let i = 0; i < enemies.length; i++) {
-    enemies[i].top = enemies[i].top + 0.15;
+    enemies[i].top = enemies[i].top + 0.05;
   }
 }
 
